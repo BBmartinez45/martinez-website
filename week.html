@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <h1>Lagos Nigeria</h1>
+    <h2>current time in Lagos Nigeria</h2>
+    <button onclick="displaydate()">The time is</button>
+    <p id="date"></p>
+
+    Enter your name: <input type="text" id="name" onchange="changeToUpperCase">
+    <p>Input your name for better identification</p>
+
+    <h1>using mouse over</h1>
+    <h2>mouse over function</h2>
+
+    <div onmouseover="mOver(this)" onmouseout="mOut(this)" style="background-color: red; width: 120px; height: 20px; padding: 40px;"></div>
+
+    <br><br>
+
+    <button  onmouseover="moVe(this)" onmouseout="mOu(this)" onmousedown="mouDOW(this)">meeting</button>
+
+    <button onclick="showAnswer()">click me</button>
+
+    <script>
+      function displaydate() {
+        document.getElementById('date').innerHTML = Date()
+      }
+
+      function changeToUpperCase() {
+        const x = document.getElementById('name')
+        x.value = x.value.toUpperCase();
+      }
+
+      function mOver (obj) {
+        obj.innerHTML = 'Thank you'
+      }
+
+      function mOut (obj) {
+        obj.innerHTML = 'John'
+      }
+
+      function mOve (obj) {
+        obj.innerHTML = 'hi guys'
+      }
+
+      function mOu (obj) {
+        obj.innerHTML = 'welcome back'
+      }
+
+      function mouDOW (obj) {
+        obj.innerHTML = 'welcome to the club'
+      }
+
+      function showAnswer () {
+        const result = 5 * 5;
+        const dropdown = document.getElementById('dropdown')
+        dropdown.innerHTML
+      }
+
+    </script>
+
+
+  </body>
+</html>

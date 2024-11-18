@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>I must lern</title>
+  </head>
+  <body>
+    <input placeholder="cost of order" class="order-cost">
+    <p class="ans"></p>
+
+    <button onclick="
+      theElement()
+    ">calculate</button>
+
+    <script>
+      function theElement() {
+        document.querySelector('.order-cost');
+        let inputScore = document.querySelector('.order-cost');
+        let finalScore = Number(inputScore.value);
+        if (finalScore < 40) {
+          finalScore = finalScore + 10;
+        }
+        let finalAns = document.querySelector('.ans').innerHTML= `$${finalScore}`
+      }
+    </script>
+
+  </body>
+</html>

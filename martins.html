@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+
+        <p><button onclick="myMove()">Click me</button></p>
+        <div id="container">
+            <div id="animate"></div>
+        </div>
+
+        <h1>Aptech Student Nigeria</h1>
+        <h2 id="let">Welcome to the world of programming</h2>
+        <h3 onclick="changeText(this)">Click on this guy</h3></button></P>
+
+        <style>
+            #container {
+                width: 400px;
+                height: 400px;
+                position: relative;
+                background: yellow;
+            }
+
+            #animate {
+                width: 50px;
+                height: 50px;
+                position: absolute;
+                background-color: green;
+            }
+
+
+        </style>
+
+        <script>
+            // let id = null;
+            // const elem = document.getElementById('animate')
+            // let pos = 0;
+            // clearInterval(id);
+            // id = setInterval (frame, 5);
+            // function frame () {
+            //     if (pos === 350) {
+            //         clearInterval(id);
+            //     }
+            // } else {
+            //     pos++;
+            //     elem.style.top = pos + "px";
+            //     elem.style.left = pos + "px";
+            // }
+
+            function myMove() {
+                let id = null;
+                const elem = document.getElementById('animate')
+                let pos = 0;
+                clearInterval(id);
+                id = setInterval (frame, 5);
+
+                function frame() {
+                    if (pos === 350) {
+                    clearInterval(id);
+                } else {
+                    pos++;
+                    elem.style.top = pos + "px";
+                    elem.style.left = pos + "px";
+                } 
+              }
+            }
+
+                function changeText(id) {
+                    id.innerHTML = "hurray !!"
+                    let.innerHTML = 'martinez'
+                }
+        </script>
+    </body>
+</html>

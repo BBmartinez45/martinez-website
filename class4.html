@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <p id="a1"></p>
+        <p id="a2"></p>
+
+        <img src="car1.jpg" id="yes">
+        <h1 id="date"></h1>
+
+        <form>
+            <ul>
+                <li>Martinez</li>
+                <li>martinez@gmail.com</li>
+            </ul>
+
+            <label for="">first name</label><input type="text" placeholder="first name"><br><br>
+            <label for="">last name</label><input type="text" placeholder="last name">
+        </form>
+
+        <div id="div">
+            <h1>you are welcome to Aptech</h1>
+            <h2>computer learning</h2>
+            <p>this is an institution</p>
+        </div>
+
+    </body>
+    <script>
+        document.getElementById('a1').innerHTML = 'Monday is the first day of the Week'
+        document.getElementById('a2').innerHTML = 'Monday always comes with Hustling'
+        document.getElementById('yes').src="car2.jpg"
+        document.getElementById('date').innerHTML="Date :"+ Date()
+
+        document.getElementById('div').style.backgroundColor="blue"
+
+    </script>
+</html>

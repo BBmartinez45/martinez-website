@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Practice</title>
+    <style>
+
+    </style>
+  </head>
+  <body>
+    <!-- <div style="height: 400px; width: 100%; border: 2px solid black;"> -->
+      <!-- <img src="school2.jpg" style="max-width: 100%; max-height: 100%;"> -->
+       <!-- <img src="car1.jpg" style="height: 100%; width: 100%;"> -->
+
+       <input placeholder="cost of order" class="js-cost-input"> 
+       
+       <button onclick="
+        calculateTotal();
+       ">calculate</button>
+       <p class="js-total-cost"></p>
+
+       <script>
+
+        function calculateTotal() {
+          const inputElement = document.querySelector('.js-cost-input');
+          let cost = Number(inputElement.value);
+
+          if (cost < 40) {
+            cost = cost + 10;
+          }
+
+          document.querySelector('.js-total-cost')
+          .innerHTML = `$${cost}`
+        }
+
+
+       </script>
+
+
+    </div>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+
+    <h2>welcome to a new topic</h2>
+
+    <p>making use of eventlistener</p>
+    <button id="btn">current date</button>
+
+    <h3 id="dat"></h3>
+
+    <button onclick="
+      alert(currentDate)
+    ">current date</button>
+
+
+  </body>
+
+  <script>
+
+    x = document.getElementById('btn')
+    x.addEventListener('click', displayperson);
+    x.addEventListener('click', myGuy)
+
+    function showdate () {
+      document.getElementById('dat').innerHTML = Date()
+    }
+
+    function displayperson() {
+      alert('welcome chigozie')
+    }
+
+    function myGuy() {
+      alert('welcome chibuzor')
+    }
+
+    let currentDate = 5 * 5;
+
+  </script>
+
+
+</html>
